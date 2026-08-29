@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/gri3ex/Документы/Git/ContextFlow/main.py", line 74, in <module>
+    main()
+  File "/home/gri3ex/Документы/Git/ContextFlow/main.py", line 53, in main
+    window = ContextFlowWindow()
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/gri3ex/Документы/Git/ContextFlow/ui.py", line 17, in __init__
+    self.load_data()
+  File "/home/gri3ex/Документы/Git/ContextFlow/ui.py", line 321, in load_data
+    for idx, (clip_id, category, content, created_at, is_favorite) in enumerate(get_clips(), start=1):
+                                                                                ^^^^^^^^^^^
+  File "/home/gri3ex/Документы/Git/ContextFlow/database.py", line 60, in get_clips
+    cursor.execute("SELECT id, category, content, created_at, is_favorite FROM clips ORDER BY id DESC LIMIT ?", (limit,))
+sqlite3.OperationalError: no such column: is_favorite
