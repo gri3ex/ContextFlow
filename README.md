@@ -55,6 +55,7 @@ NoDisplay=false
 X-GNOME-Autostart-enabled=true
 Name=ContextFlow
 Comment=Clipboard manager background daemon
+```
 
 Global Shortcut Integration
 To bind a system-wide hotkey that opens or hides the application window instantly:
